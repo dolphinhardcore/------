@@ -10,23 +10,18 @@ imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 ![kadai8_1](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai8_1.png)  
 図１ 白黒濃淡画像
 
-IMG = ORG > 64;
+IMG = ORG > 128; % 閾値128で二値化
 
-によって輝度値が64以上の画素を1，その他を0に変換した．結果を図２に示す． 
+によって輝度値が128以上の画素を1，その他を0に変換した．結果を図２に示す． 
 
-![kadai3_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai3_2.png)  
-図２ 閾値64
+![kadai8_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai8_2.png)  
+図２ 閾値128
 
-IMG = ORG > 96;
+IMG = bwlabeln(IMG);
 
-によって輝度値が96以上の画素を1，その他を0に変換した．結果を図３に示す． 
+によって二値化された画像の連結成分にラベルをつけた．結果を図３に示す．  
 
-![kadai3_3](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai3_3.png)  
-図３ 閾値96
+![kadai8_3](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai8_3.png)  
+図３ ラベリング
 
-IMG = ORG > 128;
-
-によって輝度値が128以上の画素を1，その他を0に変換した．結果を図４に示す． 
-
-![kadai3_4](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai3_4.png)  
-図４ 閾値128
+これによって連結成分の部分は同じ色で表示されていることがわかる．
