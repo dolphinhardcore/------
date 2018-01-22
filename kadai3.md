@@ -1,7 +1,7 @@
 # 課題3レポート　　
 標準画像「Girl」を原画像とする．この画像は縦256画像，横256画素による正方形のディジタルカラー画像である．
 
-ORG=imread('Girl.bmp'); % 原画像の入力
+ORG=imread('Girl.bmp'); % 原画像の入力  
 ORG= rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
 
 imagesc(ORG); colormap(gray); colorbar; % 画像の表示
@@ -40,3 +40,4 @@ IMG = ORG > 192;
 ![kadai3_5](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai3_5.png)  
 図５ 閾値192
 
+このように閾値を高く設定していくと輝度値が低い画素は0になっていく．よって輝度値が低い画素を多く含む原画像の場合，閾値を高くしていくと黒い部分が多くなっていく．
