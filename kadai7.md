@@ -21,7 +21,7 @@ ORG = uint8(ORG);
 
 によって画像を8諧調へ変換した．8諧調は縦256画素，横256画素である．濃度ヒストグラムを図３に示す．
 
-![kadai7_4](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai7_4.png)  
+![kadai7_4](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai7_4.png)  
 図３ 8諧調での濃度ヒストグラム
 
-濃度ヒストグラムより濃度値が256までになっていることがわかる．
+濃度ヒストグラムより画素のダイナミックレンジが拡大していることがわかる．
