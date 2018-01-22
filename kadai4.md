@@ -17,3 +17,4 @@ imhist(ORG);
 ![kadai4_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai4_2.png)  
 図２ 濃度ヒストグラム
 
+今回の場合は濃度が低い画素が多く含まれていることが濃度ヒストグラムよりわかった．
