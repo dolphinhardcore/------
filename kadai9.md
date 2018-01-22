@@ -39,3 +39,6 @@ IMG = filter2(f,IMG,'same'); % フィルタの適用
 ![kadai9_5](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai9_5.png)  
 図５ 先鋭化フィルタ
 
+平滑化フィルタではエッジがなまることが確認できた．  
+メディアンフィルタではエッジをぼかすことなくノイズ除去ができていることが確認できた．  
+先鋭化フィルタでは濃度値の変化が強調されていることが確認できた．
