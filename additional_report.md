@@ -1,7 +1,7 @@
 # 追加レポート　　
 標準画像「Mandrill」を原画像とする．この画像は縦512画素，横512画素による正方形のディジタルカラー画像である．
 
-ORG = imread('Girl.bmp'); % 画像の読み込み  
+ORG = imread('Mandrill.jpg'); % 画像の読み込み  
 ORG = rgb2gray(ORG); % 白黒濃淡画像に変換  
 imagesc(ORG); colormap(gray); colorbar; % 画像の表示  
 
