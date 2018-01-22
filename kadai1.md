@@ -15,7 +15,7 @@ IMG =imresize(ORG,0.5); % 画像の縮小
 IMG2 = imresize(IMG,2,'box'); % 画像の拡大  
 1/2サンプリングの結果を図２に示す．
 
-![kadai1_1](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_2.png)  
+![kadai1_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_2.png)  
 図2 1/2サンプリング
 
 同様に原画像を1/4サンプリングするには，画像を1/2倍に縮小した後，2倍に拡大すればよい．すなわち，
@@ -25,7 +25,7 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 とする．1/4サンプリングの結果を図３に示す．
 
-![kadai1_1](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_3.png)  
+![kadai1_3](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_3.png)  
 図3 1/4サンプリング
 
 1/8から1/32サンプリングは，
@@ -35,13 +35,13 @@ IMG2 = imresize(IMG,2,'box'); % 画像の拡大
 
 を繰り返す．サンプリングの結果を図４～６に示す．
 
-![kadai1_1](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_4.png)  
+![kadai1_4](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_4.png)  
 図4 1/8サンプリング
 
-![kadai1_1](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_5.png)  
+![kadai1_5](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_5.png)  
 図5 1/16サンプリング
 
-![kadai1_1](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_6.png)  
+![kadai1_6](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai1_6.png)  
 図6 1/32サンプリング
 
 このようにサンプリング幅が大きくなると，モザイク状のサンプリング歪みが発生する．
