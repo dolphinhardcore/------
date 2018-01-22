@@ -36,7 +36,7 @@ end;
 
 IMG = ORG > max_thres;  
 
-![kadai5_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai5_2.png)  
+![kadai5_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai5_2.png)  
 図２ 判別分析法を用いた２値化
 
 判別分析法は対象物の濃度と，背景の濃度とがそれぞれもっともよくまとまり，かつ対象物と背景との違いが際立つよう閾値を定める方法である．  
