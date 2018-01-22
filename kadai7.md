@@ -15,18 +15,13 @@ imhist(ORG); % 濃度ヒストグラムを生成、表示
 によって濃度ヒストグラムを生成し表示した．結果を図２に示す． 
 
 ![kadai7_2](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai7_2.png)  
-図２ ｓ濃度ヒストグラム
+図２ 白黒濃淡画像の濃度ヒストグラム
 
-IMG = ORG > 96;
+ORG = uint8(ORG); 
 
-によって輝度値が96以上の画素を1，その他を0に変換した．結果を図３に示す． 
+によって画像を8諧調へ変換した．8諧調は縦256画素，横256画素である．濃度ヒストグラムを図３に示す．
 
-![kadai7_3](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai7_3.png)  
-図３ 閾値96
+![kadai7_4](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai7_4.png)  
+図３ 8諧調での濃度ヒストグラム
 
-IMG = ORG > 128;
-
-によって輝度値が128以上の画素を1，その他を0に変換した．結果を図４に示す． 
-
-![kadai7_4](https://github.com/dolphinhardcore/kadai/blob/master/image/kadai7_4.png)  
-図４ 閾値128
+濃度ヒストグラムより濃度値が256までになっていることがわかる．
