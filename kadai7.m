@@ -10,11 +10,11 @@ imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 pause;
 imhist(ORG); % 濃度ヒストグラムを生成、表示
 pause;
-ORG1 = double(ORG);
-mn = min(ORG1(:)); % 濃度値の最小値を算出
-mx = max(ORG1(:)); % 濃度値の最大値を算出
-ORG1 = (ORG1-mn)/(mx-mn)*255;
-imagesc(ORG1); colormap(gray); colorbar; % 画像の表示
+ORG = double(ORG);
+mn = min(ORG(:)); % 濃度値の最小値を算出
+mx = max(ORG(:)); % 濃度値の最大値を算出
+ORG = (ORG-mn)/(mx-mn)*255;
+imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 pause;
-ORG2 = uint8(ORG); % この行について考察せよ
-imhist(ORG2); % 濃度ヒストグラムを生成、表示
+ORG = uint8(ORG); % この行について考察せよ
+imhist(ORG); % 濃度ヒストグラムを生成、表示
